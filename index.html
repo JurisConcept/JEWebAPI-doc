@@ -1,10 +1,6 @@
 <!-- HTML for static distribution bundle build -->
 <!DOCTYPE html>
 <html lang="en">
-  <Script>
-      const ui = SwaggerUIBundle({
-        url: "swagger.yaml",
-        </Script>
   <head>
     <meta charset="UTF-8">
     <title>Swagger UI</title>
@@ -19,5 +15,13 @@
     <script src="dist/swagger-ui-bundle.js" charset="UTF-8"> </script>
     <script src="dist/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
     <script src="dist/swagger-initializer.js" charset="UTF-8"> </script>
+    <script>
+  window.onload = () => {
+    window.ui = SwaggerUIBundle({
+      url: 'https://jeapi-swagger.s3.ca-central-1.amazonaws.com/JEWebAPI_swagger.json',
+      dom_id: '#swagger-ui',
+    });
+  };
+</script>
   </body>
 </html>
