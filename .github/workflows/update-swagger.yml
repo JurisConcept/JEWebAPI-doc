@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@JurisConcept 
-peter-evans
-/
-swagger-github-pages
-Public template
-Fork your own copy of peter-evans/swagger-github-pages
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Security
-Insights
-swagger-github-pages/.github/workflows/update-swagger.yml
-@peter-evans
-peter-evans Replace set-output
-Latest commit 6cd9655 on Oct 18, 2022
- History
- 3 contributors
-@peter-evans@cclauss@jvilders
-54 lines (51 sloc)  2.33 KB
-
 name: Update Swagger UI
 on:
   schedule:
